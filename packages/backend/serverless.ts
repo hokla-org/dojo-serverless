@@ -16,7 +16,7 @@ const serverlessConfiguration: AWS = {
     architecture: 'arm64',
     region: 'eu-west-1',
     profile: '${env:AWS_PROFILE}', // Used to point to the right AWS account
-    stage: "${opt:stage, 'dev'}", // Doc: https://www.serverless.com/framework/docs/providers/aws/guide/credentials/
+    stage: "${opt:stage, '${env:DEV_NAME}'}", // Doc: https://www.serverless.com/framework/docs/providers/aws/guide/credentials/
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',

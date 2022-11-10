@@ -9,7 +9,3 @@ Useful information:
   - Backend cloud provider: AWS
 
 - Core subjects: AWS console, AWS Lambda, AWS DynamoDB, [Serverless Framework](https://www.serverless.com/framework/docs), Typescript, [Nx](https://nx.dev/) (monorepo technology)
-
-
-
-
